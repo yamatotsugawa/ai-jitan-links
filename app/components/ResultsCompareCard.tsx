@@ -1,5 +1,4 @@
-// components/ResultsCompareCard.tsx
-import clsx from "clsx";
+// app/components/ResultsCompareCard.tsx
 
 type Props = {
   title: string;
@@ -12,7 +11,7 @@ type Props = {
   totalAfter: number;
   badge: string;
   tone?: "blue" | "green";
-  note?: string; // ← 追加
+  note?: string;
 };
 
 export default function ResultsCompareCard({
@@ -26,21 +25,24 @@ export default function ResultsCompareCard({
   totalAfter,
   badge,
   tone = "blue",
-  note, // ← 追加
+  note,
 }: Props) {
-  const toneClasses =
+  const ringClass = tone === "green" ? "ring-emerald-200" : "ring-sky-200";
+  const headClass = tone === "green" ? "text-emerald-700" : "text-sky-700";
+  const pillClass =
     tone === "green"
-      ? { ring: "ring-emerald-200", head: "text-emerald-700", pill: "bg-emerald-100 text-emerald-800" }
-      : { ring: "ring-sky-200", head: "text-sky-700", pill: "bg-sky-100 text-sky-800" };
+      ? "bg-emerald-100 text-emerald-800"
+      : "bg-sky-100 text-sky-800";
 
   return (
-    <section className={clsx("rounded-2xl bg-white p-6 shadow-sm ring-1", toneClasses.ring)}>
+    <section className={`rounded-2xl bg-white p-6 shadow-sm ring-1 ${ringClass}`}>
       <div className="flex items-center justify-between gap-3">
-        <h3 className={clsx("text-lg font-bold", toneClasses.head)}>{title}</h3>
-        <span className={clsx("rounded-full px-3 py-1 text-xs font-semibold", toneClasses.pill)}>
+        <h3 className={`text-lg font-bold ${headClass}`}>{title}</h3>
+        <span className={`rounded-full px-3 py-1 text-xs font-semibold ${pillClass}`}>
           {badge}
         </span>
       </div>
+
       {caption && <p className="mt-1 text-slate-600 text-sm">{caption}</p>}
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -77,11 +79,7 @@ export default function ResultsCompareCard({
         </div>
       </div>
 
-      {note && (
-        <p className="mt-3 text-xs text-slate-500">
-          {note}
-        </p>
-      )}
+      {note && <p className="mt-3 text-xs text-slate-500">{note}</p>}
     </section>
   );
 }
