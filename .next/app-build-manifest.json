@@ -1,0 +1,65 @@
+{
+  "pages": {
+    "/online-meeting/day1/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day1/page.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/online-meeting/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/page.js"
+    ],
+    "/online-meeting/day2/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day2/page.js"
+    ],
+    "/online-meeting/day3/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day3/page.js"
+    ],
+    "/online-meeting/day4/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day4/page.js"
+    ],
+    "/online-meeting/day5/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day5/page.js"
+    ],
+    "/online-meeting/day6/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day6/page.js"
+    ],
+    "/online-meeting/day7/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/day7/page.js"
+    ],
+    "/online-meeting/ending/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/ending/page.js"
+    ],
+    "/online-meeting/results/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/results/page.js"
+    ],
+    "/online-meeting/privacy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/online-meeting/privacy/page.js"
+    ]
+  }
+}
