@@ -1,6 +1,7 @@
 // app/online-meeting/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+// import { type RouteImpl } from "next/dist/lib/load-custom-routes";  ← この行は前回削除済み
 
 export const metadata: Metadata = {
   title: "AI時短チャレンジ！｜オンライン講座トップ",
@@ -274,7 +275,7 @@ function BreakdownCard({
   totalBefore,
   totalAfter,
   badge,
-  note, // <-- この行を追加
+  note,
   tone = "blue",
 }: {
   title: string;
@@ -286,7 +287,7 @@ function BreakdownCard({
   totalBefore: number;
   totalAfter: number;
   badge?: string;
-  note?: string; // <-- この行を追加
+  note?: string;
   tone?: "blue" | "amber";
 }) {
   const pal =
@@ -348,7 +349,6 @@ function BreakdownCard({
           {badge}
         </div>
       )}
-      {/* noteプロパティを表示するためのロジックを追加 */}
       {note && (
         <div className="mt-3 text-slate-600 text-sm">
           <span className="font-semibold">補足：</span>
@@ -361,7 +361,7 @@ function BreakdownCard({
 
 /* ---------- Day1〜Day7 データ ---------- */
 const days: {
-  href: RouteImpl<string>; // この行を修正
+  href: string;
   badge: string;
   title: string;
   desc: string;
