@@ -29,21 +29,21 @@ declare namespace __next_route_internal_types__ {
     S extends `${string}${SearchOrHash}` ? never : S
 
   type StaticRoutes = 
-    | `/`
-    | `/online-meeting`
     | `/online-meeting/day1`
     | `/online-meeting/day2`
-    | `/online-meeting/day3`
     | `/online-meeting/day4`
-    | `/online-meeting/day6`
-    | `/online-meeting/day5`
-    | `/online-meeting/day7`
-    | `/online-meeting/faq`
     | `/online-meeting/friend`
+    | `/online-meeting/day6`
     | `/online-meeting/intro`
+    | `/online-meeting/day3`
+    | `/online-meeting/day7`
+    | `/online-meeting/day5`
+    | `/online-meeting`
+    | `/online-meeting/faq`
+    | `/`
     | `/online-meeting/results`
-    | `/online-meeting/ending`
     | `/online-meeting/privacy`
+    | `/online-meeting/ending`
   type DynamicRoutes<T extends string = string> = never
 
   type RouteImpl<T> = 

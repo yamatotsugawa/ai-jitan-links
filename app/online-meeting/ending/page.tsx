@@ -1,6 +1,7 @@
 // app/online-meeting/closing/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import type { JSX } from "react";
 
 export const metadata: Metadata = {
   title: "AI時短チャレンジ おわりに｜7日間の総まとめ",

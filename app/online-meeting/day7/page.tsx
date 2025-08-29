@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CopyButton from "@/components/CopyButton";
+import type { JSX } from "react";
 
 export const metadata: Metadata = {
   title: "AI時短チャレンジ Day7｜心を動かす提案資料を作る",

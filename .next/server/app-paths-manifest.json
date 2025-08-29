@@ -1,7 +1,18 @@
 {
-  "/online-meeting/day6/page": "app/online-meeting/day6/page.js",
-  "/online-meeting/page": "app/online-meeting/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/online-meeting/day1/page": "app/online-meeting/day1/page.js",
+  "/online-meeting/day2/page": "app/online-meeting/day2/page.js",
+  "/online-meeting/day4/page": "app/online-meeting/day4/page.js",
+  "/online-meeting/friend/page": "app/online-meeting/friend/page.js",
+  "/online-meeting/day6/page": "app/online-meeting/day6/page.js",
+  "/online-meeting/intro/page": "app/online-meeting/intro/page.js",
+  "/online-meeting/day3/page": "app/online-meeting/day3/page.js",
+  "/online-meeting/day7/page": "app/online-meeting/day7/page.js",
+  "/online-meeting/day5/page": "app/online-meeting/day5/page.js",
+  "/online-meeting/page": "app/online-meeting/page.js",
+  "/online-meeting/faq/page": "app/online-meeting/faq/page.js",
+  "/page": "app/page.js",
+  "/online-meeting/results/page": "app/online-meeting/results/page.js",
   "/online-meeting/privacy/page": "app/online-meeting/privacy/page.js",
   "/online-meeting/ending/page": "app/online-meeting/ending/page.js"
 }

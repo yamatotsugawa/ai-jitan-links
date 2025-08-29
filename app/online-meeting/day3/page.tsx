@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import type { JSX } from "react";
 
 const PROMPT_TEXT = `あなたは優秀なファシリテーターです。
 以下の会議の会話内容を読み、次の3点を簡潔に教えてください。

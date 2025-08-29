@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { JSX } from "react";
 
 const REF_LINK = "https://notta.cello.so/KP98H0EtfDg"; // 紹介リンク（報酬発生URL）
 

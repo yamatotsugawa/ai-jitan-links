@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import type { JSX } from "react";
 
 const PROMPT_TEXT = `あなたは優秀なビジネスアシスタントです。
 ソースとして提供された議事録の文字起こしデータを元に、以下の形式でビジネス日報を作成してください。
