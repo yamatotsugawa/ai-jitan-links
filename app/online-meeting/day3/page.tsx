@@ -14,7 +14,7 @@ const PROMPT_TEXT = `あなたは優秀なファシリテーターです。
 【会議の会話内容】
 （ここに、Nottaからコピーしたテキストを貼り付け）`;
 
-export default function Day3(): JSX.Element {
+export default function Day3() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {

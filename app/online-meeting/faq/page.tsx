@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "AI時短チャレンジの内容・費用・各Dayのやり方・AI-DX・ブロードリスニング・サポート体制など、よくある質問にまとめてお答えします。",
 };
 
-const faqs: { q: string; a: JSX.Element }[] = [
+const faqs: { q: string; a }[] = [
   {
     q: "この「AI時短チャレンジ」はどのような内容ですか？",
     a: (

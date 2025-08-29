@@ -27,7 +27,7 @@ const PROMPT_TEXT = `あなたは優秀なビジネスアシスタントです�
 6. ネクストアクション
 （次に繋がる行動を記述）`;
 
-export default function Day4(): JSX.Element {
+export default function Day4() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {

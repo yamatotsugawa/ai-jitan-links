@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CopyButton from "@/components/CopyButton";
+import CopyButton from "../../components/CopyButton";
 import type { JSX } from "react";
 
 export const metadata: Metadata = {

@@ -4,7 +4,7 @@ import type { JSX } from "react";
 
 const REF_LINK = "https://notta.cello.so/KP98H0EtfDg"; // 紹介リンク（報酬発生URL）
 
-export default function Day2(): JSX.Element {
+export default function Day2() {
   return (
     <div className="space-y-12">
       {/* ヘッダー */}

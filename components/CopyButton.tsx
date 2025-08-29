@@ -1,29 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
-interface CopyButtonProps {
+export default function CopyButton({
+  text,
+  label = "コピー",
+}: {
   text: string;
   label?: string;
-}
-
-export default function CopyButton({ text, label = "コピー" }: CopyButtonProps) {
+}) {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = async () => {
+  const onCopy = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error("コピーに失敗しました:", err);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // 失敗時は何もしない
     }
-  };
+  }, [text]);
 
   return (
     <button
-      onClick={handleCopy}
-      className="rounded-lg bg-sky-600 px-3 py-1 text-sm font-medium text-white hover:bg-sky-700"
+      type="button"
+      onClick={onCopy}
+      className="inline-flex items-center rounded-lg bg-sky-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-sky-700 active:translate-y-px transition"
+      aria-label={label}
     >
       {copied ? "コピーしました！" : label}
     </button>

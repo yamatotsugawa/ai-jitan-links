@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { JSX } from "react";
 
-export default function Day1(): JSX.Element {
+export default function Day1() {
   return (
     <div className="mx-auto max-w-3xl space-y-12">
       {/* ヒーロー */}
