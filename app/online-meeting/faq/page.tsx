@@ -1,5 +1,9 @@
 // app/online-meeting/faq/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
+import type { ReactNode } from "react"; 
+
+type FAQ = { q: string; a: ReactNode }; 
 
 export const metadata: Metadata = {
   title: "AI時短チャレンジ FAQ | よくある質問",
@@ -7,7 +11,7 @@ export const metadata: Metadata = {
     "AI時短チャレンジの内容・費用・各Dayのやり方・AI-DX・ブロードリスニング・サポート体制など、よくある質問にまとめてお答えします。",
 };
 
-const faqs: { q: string; a }[] = [
+const faqs: FAQ[] = [
   {
     q: "この「AI時短チャレンジ」はどのような内容ですか？",
     a: (
