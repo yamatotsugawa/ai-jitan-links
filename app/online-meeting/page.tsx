@@ -64,7 +64,6 @@ export default function OnlineMeetingTop() {
 
           {/* 2枚の内訳カード */}
           {/* 2枚の内訳カード → 上下配置 */}
-{/* 2枚の内訳カード → 上下配置 */}
 <div className="mt-6 space-y-6">
   {/* 通常の会議（Day1〜4） */}
   <BreakdownCard
@@ -275,6 +274,7 @@ function BreakdownCard({
   totalBefore,
   totalAfter,
   badge,
+  note, // <-- この行を追加
   tone = "blue",
 }: {
   title: string;
@@ -286,6 +286,7 @@ function BreakdownCard({
   totalBefore: number;
   totalAfter: number;
   badge?: string;
+  note?: string; // <-- この行を追加
   tone?: "blue" | "amber";
 }) {
   const pal =
@@ -345,6 +346,13 @@ function BreakdownCard({
       {badge && (
         <div className="mt-3 inline-flex items-center rounded-full bg-white px-3 py-1 text-sm font-semibold text-slate-800 ring-1 ring-slate-200">
           {badge}
+        </div>
+      )}
+      {/* noteプロパティを表示するためのロジックを追加 */}
+      {note && (
+        <div className="mt-3 text-slate-600 text-sm">
+          <span className="font-semibold">補足：</span>
+          {note}
         </div>
       )}
     </div>
