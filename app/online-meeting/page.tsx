@@ -1,7 +1,6 @@
 // app/online-meeting/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
-import ResultsCompareCard from "@/app/components/ResultsCompareCard";
 
 export const metadata: Metadata = {
   title: "AI時短チャレンジ！｜オンライン講座トップ",
