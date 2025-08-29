@@ -242,7 +242,7 @@ export default function OnlineMeetingTop() {
               <Link href="/online-meeting/results" className="hover:underline">
                 時短実績
               </Link>
-              <Link href="/online-meeting/closing" className="hover:underline">
+              <Link href="/online-meeting/ending" className="hover:underline">
                 おわりに
               </Link>
               <a
