@@ -1,5 +1,4 @@
 // app/components/ResultsCompareCard.tsx
-
 type Props = {
   title: string;
   caption?: string;
@@ -11,7 +10,7 @@ type Props = {
   totalAfter: number;
   badge: string;
   tone?: "blue" | "green";
-  note?: string;
+  note?: string; // ← 追加
 };
 
 export default function ResultsCompareCard({
@@ -25,7 +24,7 @@ export default function ResultsCompareCard({
   totalAfter,
   badge,
   tone = "blue",
-  note,
+  note, // ← 追加
 }: Props) {
   const ringClass = tone === "green" ? "ring-emerald-200" : "ring-sky-200";
   const headClass = tone === "green" ? "text-emerald-700" : "text-sky-700";
