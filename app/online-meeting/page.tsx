@@ -360,8 +360,9 @@ function BreakdownCard({
 }
 
 /* ---------- Day1〜Day7 データ ---------- */
+/* ---------- Day1〜Day7 データ ---------- */
 const days: {
-  href: string; // この行が正しく修正されているか確認
+  href: string; // ここが正しく修正されているか確認してください
   badge: string;
   title: string;
   desc: string;
