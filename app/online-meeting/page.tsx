@@ -201,7 +201,7 @@ export default function OnlineMeetingTop() {
           </Link>
 
           <Link
-            href="online-meeting/ending"
+            href="/online-meeting/ending"
             className="block w-full rounded-2xl bg-white px-5 py-4 text-slate-800 shadow-sm ring-1 ring-slate-200 hover:bg-slate-50 transition"
           >
             <div className="flex items-center justify-between">
