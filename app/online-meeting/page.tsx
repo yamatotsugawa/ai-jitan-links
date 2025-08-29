@@ -362,7 +362,7 @@ function BreakdownCard({
 /* ---------- Day1〜Day7 データ ---------- */
 /* ---------- Day1〜Day7 データ ---------- */
 const days: {
-  href: string; // ここが正しく修正されているか確認してください
+  href: string; // ここを修正してください
   badge: string;
   title: string;
   desc: string;
