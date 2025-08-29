@@ -151,7 +151,7 @@ export default function OnlineMeetingTop() {
           {days.map((d) => (
             <Link
               key={d.href}
-              href={d.href}
+              href={d.href as any}
               className="group block w-full rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 p-[2px] shadow hover:shadow-md transition"
             >
               <div className="flex items-center justify-between rounded-2xl bg-white px-5 py-4">
@@ -361,7 +361,7 @@ function BreakdownCard({
 /* ---------- Day1〜Day7 データ ---------- */
 // 型定義を明示的に追加
 interface DayItem {
-  href: string;
+  href: `/online-meeting/${string}`;
   badge: string;
   title: string;
   desc: string;
