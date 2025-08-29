@@ -29,7 +29,7 @@ export default function OnlineMeetingTop() {
 
           <p className="mt-5 max-w-3xl text-lg leading-relaxed text-slate-700">
             予定調整・議事録・提案骨子・デザインまで。面倒ごとはAIに任せて、
-            あなたは「考える仕事」に集中。7日で“見えない時間泥棒”を卒業しましょう。
+            あなたは「考える仕事」に集中。7日で"見えない時間泥棒"を卒業しましょう。
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -359,12 +359,20 @@ function BreakdownCard({
 }
 
 /* ---------- Day1〜Day7 データ ---------- */
-const days = [
+// 型定義を明示的に追加
+interface DayItem {
+  href: string;
+  badge: string;
+  title: string;
+  desc: string;
+}
+
+const days: DayItem[] = [
   {
     href: "/online-meeting/day1",
     badge: "Day1",
     title: "予定調整を自動化",
-    desc: "eeeasyで“予約ページ”を作成。空き時間だけを提示して往復メールをゼロに。",
+    desc: "eeeasyで"予約ページ"を作成。空き時間だけを提示して往復メールをゼロに。",
   },
   {
     href: "/online-meeting/day2",
@@ -375,20 +383,20 @@ const days = [
   {
     href: "/online-meeting/day3",
     badge: "Day3",
-    title: "会議を“参謀”と進める",
+    title: "会議を"参謀"と進める",
     desc: "Geminiで論点整理。議論のズレや見落としをAIが指摘してくれます。",
   },
   {
     href: "/online-meeting/day4",
     badge: "Day4",
-    title: "資料の“工場”を作る",
+    title: "資料の"工場"を作る",
     desc: "NotebookLM で賢い資料図書館を構築。命名規則＆秘密メモも。",
   },
   {
     href: "/online-meeting/day5",
     badge: "Day5",
     title: "外部脳で次の一手",
-    desc: "ブリーフィング＆マインドマップで“勝利の糸口”を発見。",
+    desc: "ブリーフィング＆マインドマップで"勝利の糸口"を発見。",
   },
   {
     href: "/online-meeting/day6",
@@ -400,6 +408,6 @@ const days = [
     href: "/online-meeting/day7",
     badge: "Day7",
     title: "骨子→インフォグラフィック",
-    desc: "Geminiで“見せる資料”へ一瞬で変換。共有まで一気通貫で。",
+    desc: "Geminiで"見せる資料"へ一瞬で変換。共有まで一気通貫で。",
   },
 ];
