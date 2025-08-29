@@ -408,6 +408,6 @@ const days: DayItem[] = [
     href: "/online-meeting/day7",
     badge: "Day7",
     title: "骨子→インフォグラフィック",
-    desc: "Geminiで"見せる資料"へ一瞬で変換。共有まで一気通貫で。",
+    desc: "Geminiで「見せる資料」へ一瞬で変換。共有まで一気通貫で。",
   },
 ];
