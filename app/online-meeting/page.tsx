@@ -372,7 +372,7 @@ const days: DayItem[] = [
     href: "/online-meeting/day1",
     badge: "Day1",
     title: "予定調整を自動化",
-    desc: "eeeasyで"予約ページ"を作成。空き時間だけを提示して往復メールをゼロに。",
+    desc: "eeeasyで「予約ページ」を作成。空き時間だけを提示して往復メールをゼロに。",
   },
   {
     href: "/online-meeting/day2",
@@ -383,20 +383,20 @@ const days: DayItem[] = [
   {
     href: "/online-meeting/day3",
     badge: "Day3",
-    title: "会議を"参謀"と進める",
+    title: "会議を「参謀」と進める",
     desc: "Geminiで論点整理。議論のズレや見落としをAIが指摘してくれます。",
   },
   {
     href: "/online-meeting/day4",
     badge: "Day4",
-    title: "資料の"工場"を作る",
+    title: "資料の「工場」を作る",
     desc: "NotebookLM で賢い資料図書館を構築。命名規則＆秘密メモも。",
   },
   {
     href: "/online-meeting/day5",
     badge: "Day5",
     title: "外部脳で次の一手",
-    desc: "ブリーフィング＆マインドマップで"勝利の糸口"を発見。",
+    desc: "ブリーフィング＆マインドマップで「勝利の糸口」を発見。",
   },
   {
     href: "/online-meeting/day6",
