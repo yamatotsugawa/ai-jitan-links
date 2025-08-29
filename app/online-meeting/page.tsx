@@ -1,6 +1,7 @@
 // app/online-meeting/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import { type RouteImpl } from "next/dist/lib/load-custom-routes";
 
 export const metadata: Metadata = {
   title: "AI時短チャレンジ！｜オンライン講座トップ",
@@ -360,7 +361,12 @@ function BreakdownCard({
 }
 
 /* ---------- Day1〜Day7 データ ---------- */
-const days = [
+const days: {
+  href: RouteImpl<string>; // この行を修正
+  badge: string;
+  title: string;
+  desc: string;
+}[] = [
   {
     href: "/online-meeting/day1",
     badge: "Day1",
